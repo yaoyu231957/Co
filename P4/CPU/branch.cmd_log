@@ -1,0 +1,2 @@
+vhdtdtfi -lang verilog -prj CPU -o C:/Users/86139/Desktop/courses/co/P4/CPU/branch.vhi -lib work C:/Users/86139/Desktop/courses/co/P4/CPU//branch.v -module branch -template D:/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror 
+vhdtdtfi -lang verilog -prj CPU -o C:/Users/86139/Desktop/courses/co/P4/CPU/branch.vhi -lib work C:/Users/86139/Desktop/courses/co/P4/CPU//branch.v -module branch -template D:/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror 

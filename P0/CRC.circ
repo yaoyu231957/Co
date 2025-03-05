@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project source="2.7.1" version="1.0">
+  This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
+
+  <lib desc="#Wiring" name="0"/>
+  <lib desc="#Gates" name="1"/>
+  <lib desc="#Plexers" name="2"/>
+  <lib desc="#Arithmetic" name="3"/>
+  <lib desc="#Memory" name="4"/>
+  <lib desc="#I/O" name="5"/>
+  <lib desc="#Base" name="6">
+    <tool name="Text Tool">
+      <a name="text" val=""/>
+      <a name="font" val="SansSerif plain 12"/>
+      <a name="halign" val="center"/>
+      <a name="valign" val="base"/>
+    </tool>
+  </lib>
+  <main name="CRC"/>
+  <options>
+    <a name="gateUndefined" val="ignore"/>
+    <a name="simlimit" val="1000"/>
+    <a name="simrand" val="0"/>
+  </options>
+  <mappings>
+    <tool lib="6" map="Button2" name="Menu Tool"/>
+    <tool lib="6" map="Button3" name="Menu Tool"/>
+    <tool lib="6" map="Ctrl Button1" name="Menu Tool"/>
+  </mappings>
+  <toolbar>
+    <tool lib="6" name="Poke Tool"/>
+    <tool lib="6" name="Edit Tool"/>
+    <tool lib="6" name="Text Tool">
+      <a name="text" val=""/>
+      <a name="font" val="SansSerif plain 12"/>
+      <a name="halign" val="center"/>
+      <a name="valign" val="base"/>
+    </tool>
+    <sep/>
+    <tool lib="0" name="Pin">
+      <a name="tristate" val="false"/>
+    </tool>
+    <tool lib="0" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="labelloc" val="east"/>
+    </tool>
+    <tool lib="1" name="NOT Gate"/>
+    <tool lib="1" name="AND Gate"/>
+    <tool lib="1" name="OR Gate"/>
+  </toolbar>
+  <circuit name="CRC">
+    <a name="circuit" val="CRC"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <wire from="(790,290)" to="(840,290)"/>
+    <wire from="(720,380)" to="(770,380)"/>
+    <wire from="(640,380)" to="(690,380)"/>
+    <wire from="(340,180)" to="(340,190)"/>
+    <wire from="(250,300)" to="(250,380)"/>
+    <wire from="(430,300)" to="(430,380)"/>
+    <wire from="(840,290)" to="(840,380)"/>
+    <wire from="(510,300)" to="(510,380)"/>
+    <wire from="(590,300)" to="(590,380)"/>
+    <wire from="(250,380)" to="(290,380)"/>
+    <wire from="(920,390)" to="(1030,390)"/>
+    <wire from="(220,300)" to="(250,300)"/>
+    <wire from="(400,380)" to="(430,380)"/>
+    <wire from="(250,160)" to="(340,160)"/>
+    <wire from="(480,380)" to="(510,380)"/>
+    <wire from="(590,380)" to="(610,380)"/>
+    <wire from="(340,380)" to="(370,380)"/>
+    <wire from="(430,380)" to="(450,380)"/>
+    <wire from="(410,300)" to="(430,300)"/>
+    <wire from="(560,380)" to="(590,380)"/>
+    <wire from="(510,380)" to="(530,380)"/>
+    <wire from="(100,440)" to="(180,440)"/>
+    <wire from="(500,300)" to="(510,300)"/>
+    <wire from="(180,440)" to="(260,440)"/>
+    <wire from="(260,440)" to="(340,440)"/>
+    <wire from="(340,440)" to="(420,440)"/>
+    <wire from="(240,380)" to="(250,380)"/>
+    <wire from="(420,440)" to="(500,440)"/>
+    <wire from="(500,440)" to="(580,440)"/>
+    <wire from="(580,440)" to="(660,440)"/>
+    <wire from="(660,440)" to="(740,440)"/>
+    <wire from="(580,300)" to="(590,300)"/>
+    <wire from="(380,170)" to="(450,170)"/>
+    <wire from="(280,180)" to="(340,180)"/>
+    <wire from="(830,400)" to="(880,400)"/>
+    <wire from="(90,380)" to="(210,380)"/>
+    <wire from="(970,430)" to="(1030,430)"/>
+    <wire from="(840,380)" to="(880,380)"/>
+    <wire from="(800,380)" to="(840,380)"/>
+    <wire from="(340,300)" to="(340,380)"/>
+    <wire from="(1080,410)" to="(1130,410)"/>
+    <wire from="(180,390)" to="(210,390)"/>
+    <wire from="(420,390)" to="(450,390)"/>
+    <wire from="(500,390)" to="(530,390)"/>
+    <wire from="(260,390)" to="(290,390)"/>
+    <wire from="(340,390)" to="(370,390)"/>
+    <wire from="(660,390)" to="(690,390)"/>
+    <wire from="(320,300)" to="(340,300)"/>
+    <wire from="(740,390)" to="(770,390)"/>
+    <wire from="(320,380)" to="(340,380)"/>
+    <wire from="(580,390)" to="(610,390)"/>
+    <wire from="(180,390)" to="(180,440)"/>
+    <wire from="(130,160)" to="(210,160)"/>
+    <wire from="(420,390)" to="(420,440)"/>
+    <wire from="(500,390)" to="(500,440)"/>
+    <wire from="(260,390)" to="(260,440)"/>
+    <wire from="(340,390)" to="(340,440)"/>
+    <wire from="(660,390)" to="(660,440)"/>
+    <wire from="(740,390)" to="(740,440)"/>
+    <wire from="(580,390)" to="(580,440)"/>
+    <comp lib="0" loc="(1130,410)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="11"/>
+      <a name="label" val="C"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="0" loc="(450,170)" name="Tunnel">
+      <a name="width" val="11"/>
+      <a name="label" val="被除数"/>
+    </comp>
+    <comp lib="0" loc="(580,300)" name="Probe"/>
+    <comp lib="0" loc="(410,300)" name="Probe"/>
+    <comp loc="(400,380)" name="除一次"/>
+    <comp lib="0" loc="(130,160)" name="Pin">
+      <a name="width" val="8"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="A"/>
+    </comp>
+    <comp loc="(720,380)" name="除一次"/>
+    <comp lib="3" loc="(380,170)" name="Shifter">
+      <a name="width" val="11"/>
+    </comp>
+    <comp lib="0" loc="(320,300)" name="Probe"/>
+    <comp loc="(320,380)" name="除一次"/>
+    <comp loc="(800,380)" name="除一次"/>
+    <comp loc="(560,380)" name="除一次"/>
+    <comp lib="0" loc="(280,180)" name="Constant">
+      <a name="width" val="4"/>
+      <a name="value" val="0x3"/>
+    </comp>
+    <comp lib="0" loc="(90,380)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="width" val="11"/>
+      <a name="label" val="被除数"/>
+    </comp>
+    <comp lib="3" loc="(920,390)" name="Shifter">
+      <a name="width" val="11"/>
+      <a name="shift" val="lr"/>
+    </comp>
+    <comp lib="0" loc="(100,440)" name="Pin">
+      <a name="width" val="4"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="B"/>
+    </comp>
+    <comp lib="0" loc="(250,160)" name="Bit Extender">
+      <a name="out_width" val="11"/>
+    </comp>
+    <comp lib="0" loc="(500,300)" name="Probe"/>
+    <comp loc="(240,380)" name="除一次"/>
+    <comp loc="(480,380)" name="除一次"/>
+    <comp lib="0" loc="(790,290)" name="Probe"/>
+    <comp lib="1" loc="(1080,410)" name="OR Gate">
+      <a name="width" val="11"/>
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="0" loc="(970,430)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="width" val="11"/>
+      <a name="label" val="被除数"/>
+    </comp>
+    <comp lib="0" loc="(830,400)" name="Constant">
+      <a name="width" val="4"/>
+      <a name="value" val="0x8"/>
+    </comp>
+    <comp loc="(640,380)" name="除一次"/>
+    <comp lib="0" loc="(220,300)" name="Probe"/>
+  </circuit>
+  <circuit name="四位除法器">
+    <a name="circuit" val="四位除法器"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <wire from="(170,440)" to="(520,440)"/>
+    <wire from="(170,470)" to="(330,470)"/>
+    <wire from="(170,450)" to="(330,450)"/>
+    <wire from="(210,340)" to="(270,340)"/>
+    <wire from="(430,330)" to="(480,330)"/>
+    <wire from="(170,440)" to="(170,450)"/>
+    <wire from="(370,460)" to="(520,460)"/>
+    <wire from="(310,330)" to="(390,330)"/>
+    <wire from="(550,450)" to="(660,450)"/>
+    <wire from="(130,320)" to="(170,320)"/>
+    <wire from="(170,320)" to="(170,440)"/>
+    <wire from="(530,470)" to="(530,520)"/>
+    <wire from="(170,320)" to="(270,320)"/>
+    <comp lib="0" loc="(170,470)" name="Pin">
+      <a name="width" val="4"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="除数"/>
+    </comp>
+    <comp lib="0" loc="(210,340)" name="Constant">
+      <a name="width" val="2"/>
+      <a name="value" val="0x3"/>
+    </comp>
+    <comp lib="1" loc="(370,460)" name="XOR Gate">
+      <a name="width" val="4"/>
+      <a name="size" val="30"/>
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="0" loc="(660,450)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="4"/>
+      <a name="label" val="输出"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="3" loc="(310,330)" name="Shifter">
+      <a name="width" val="4"/>
+      <a name="shift" val="lr"/>
+    </comp>
+    <comp lib="2" loc="(550,450)" name="Multiplexer">
+      <a name="width" val="4"/>
+    </comp>
+    <comp lib="0" loc="(430,330)" name="Bit Extender">
+      <a name="in_width" val="4"/>
+      <a name="out_width" val="1"/>
+    </comp>
+    <comp lib="0" loc="(480,330)" name="Tunnel">
+      <a name="label" val="最高位"/>
+    </comp>
+    <comp lib="0" loc="(530,520)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="最高位"/>
+    </comp>
+    <comp lib="0" loc="(130,320)" name="Pin">
+      <a name="width" val="4"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="被除数"/>
+    </comp>
+  </circuit>
+  <circuit name="除一次">
+    <a name="circuit" val="除一次"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <wire from="(130,250)" to="(450,250)"/>
+    <wire from="(450,210)" to="(500,210)"/>
+    <wire from="(1080,200)" to="(1120,200)"/>
+    <wire from="(320,200)" to="(370,200)"/>
+    <wire from="(230,190)" to="(280,190)"/>
+    <wire from="(860,140)" to="(860,170)"/>
+    <wire from="(790,270)" to="(830,270)"/>
+    <wire from="(620,200)" to="(720,200)"/>
+    <wire from="(860,170)" to="(900,170)"/>
+    <wire from="(230,160)" to="(230,190)"/>
+    <wire from="(130,190)" to="(230,190)"/>
+    <wire from="(410,200)" to="(500,200)"/>
+    <wire from="(820,90)" to="(840,90)"/>
+    <wire from="(820,140)" to="(840,140)"/>
+    <wire from="(840,140)" to="(860,140)"/>
+    <wire from="(470,140)" to="(560,140)"/>
+    <wire from="(560,200)" to="(580,200)"/>
+    <wire from="(950,190)" to="(1040,190)"/>
+    <wire from="(530,200)" to="(560,200)"/>
+    <wire from="(450,210)" to="(450,250)"/>
+    <wire from="(830,210)" to="(830,270)"/>
+    <wire from="(760,210)" to="(830,210)"/>
+    <wire from="(650,220)" to="(720,220)"/>
+    <wire from="(200,210)" to="(280,210)"/>
+    <wire from="(560,140)" to="(560,200)"/>
+    <wire from="(970,210)" to="(1040,210)"/>
+    <wire from="(830,210)" to="(900,210)"/>
+    <wire from="(710,150)" to="(790,150)"/>
+    <wire from="(650,130)" to="(790,130)"/>
+    <wire from="(840,90)" to="(840,140)"/>
+    <comp lib="3" loc="(320,200)" name="Shifter">
+      <a name="width" val="11"/>
+      <a name="shift" val="lr"/>
+    </comp>
+    <comp loc="(530,200)" name="四位除法器"/>
+    <comp lib="0" loc="(820,90)" name="Probe"/>
+    <comp lib="0" loc="(620,200)" name="Bit Extender">
+      <a name="in_width" val="4"/>
+      <a name="out_width" val="11"/>
+    </comp>
+    <comp lib="0" loc="(970,210)" name="Constant">
+      <a name="width" val="4"/>
+    </comp>
+    <comp lib="0" loc="(410,200)" name="Bit Extender">
+      <a name="in_width" val="11"/>
+      <a name="out_width" val="4"/>
+    </comp>
+    <comp lib="0" loc="(230,160)" name="Tunnel">
+      <a name="facing" val="south"/>
+      <a name="width" val="11"/>
+      <a name="label" val="被除数"/>
+    </comp>
+    <comp lib="3" loc="(1080,200)" name="Shifter">
+      <a name="width" val="11"/>
+    </comp>
+    <comp lib="0" loc="(650,220)" name="Constant">
+      <a name="width" val="4"/>
+      <a name="value" val="0x7"/>
+    </comp>
+    <comp lib="0" loc="(130,250)" name="Pin">
+      <a name="width" val="4"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="除数"/>
+    </comp>
+    <comp lib="3" loc="(760,210)" name="Shifter">
+      <a name="width" val="11"/>
+    </comp>
+    <comp lib="0" loc="(650,130)" name="Constant">
+      <a name="width" val="11"/>
+      <a name="value" val="0x7f"/>
+    </comp>
+    <comp lib="0" loc="(710,150)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="width" val="11"/>
+      <a name="label" val="被除数"/>
+    </comp>
+    <comp lib="0" loc="(470,140)" name="Probe"/>
+    <comp lib="0" loc="(130,190)" name="Pin">
+      <a name="width" val="11"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="被除数"/>
+    </comp>
+    <comp lib="0" loc="(200,210)" name="Constant">
+      <a name="width" val="4"/>
+      <a name="value" val="0x7"/>
+    </comp>
+    <comp lib="0" loc="(1120,200)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="11"/>
+      <a name="label" val="新被除数"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="1" loc="(820,140)" name="AND Gate">
+      <a name="width" val="11"/>
+      <a name="size" val="30"/>
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="1" loc="(950,190)" name="OR Gate">
+      <a name="width" val="11"/>
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="0" loc="(790,270)" name="Probe"/>
+  </circuit>
+</project>

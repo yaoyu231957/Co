@@ -1,0 +1,131 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to C:/Users/86139/Desktop/courses/co/P7/mips/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.17 secs
+ 
+--> Parameter xsthdpdir set to C:/Users/86139/Desktop/courses/co/P7/mips/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.17 secs
+ 
+--> Reading design: mips.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Users\86139\Desktop\courses\co\P7\mips\W_AT.v" into library work
+Parsing verilog file "define.v" included at line 23.
+Parsing module <W_AT>.
+Analyzing Verilog file "C:\Users\86139\Desktop\courses\co\P7\mips\Shift.v" into library work
+Parsing module <Shift>.
+Analyzing Verilog file "C:\Users\86139\Desktop\courses\co\P7\mips\PC.v" into library work
+Parsing module <PC>.
+Analyzing Verilog file "C:\Users\86139\Desktop\courses\co\P7\mips\M_EXC.v" into library work
+Parsing verilog file "define.v" included at line 23.
+Parsing module <M_EXC>.
+Analyzing Verilog file "C:\Users\86139\Desktop\courses\co\P7\mips\M_AT.v" into library work
+Parsing verilog file "define.v" included at line 23.
+Parsing module <M_AT>.
+Analyzing Verilog file "C:\Users\86139\Desktop\courses\co\P7\mips\mult_div.v" into library work
+Parsing verilog file "define.v" included at line 23.
+Parsing module <Mult_Div>.
+Analyzing Verilog file "C:\Users\86139\Desktop\courses\co\P7\mips\GRF.v" into library work
+Parsing module <GRF>.
+Analyzing Verilog file "C:\Users\86139\Desktop\courses\co\P7\mips\E_AT.v" into library work
+Parsing verilog file "define.v" included at line 23.
+Parsing module <E_AT>.
+Analyzing Verilog file "C:\Users\86139\Desktop\courses\co\P7\mips\EXT.v" into library work
+Parsing module <EXT>.
+Analyzing Verilog file "C:\Users\86139\Desktop\courses\co\P7\mips\D_AT.v" into library work
+Parsing verilog file "define.v" included at line 23.
+Parsing module <D_AT>.
+Analyzing Verilog file "C:\Users\86139\Desktop\courses\co\P7\mips\DM_EXT.v" into library work
+Parsing module <DM_EXT>.
+Analyzing Verilog file "C:\Users\86139\Desktop\courses\co\P7\mips\CP0.v" into library work
+Parsing verilog file "define.v" included at line 23.
+Parsing module <CP0>.
+Analyzing Verilog file "C:\Users\86139\Desktop\courses\co\P7\mips\Controller.v" into library work
+Parsing verilog file "define.v" included at line 24.
+Parsing module <Controller>.
+Analyzing Verilog file "C:\Users\86139\Desktop\courses\co\P7\mips\branch.v" into library work
+Parsing module <Branch>.
+Analyzing Verilog file "C:\Users\86139\Desktop\courses\co\P7\mips\ALU.v" into library work
+Parsing module <ALU>.
+Analyzing Verilog file "C:\Users\86139\Desktop\courses\co\P7\mips\Writeback.v" into library work
+Parsing module <Writeback>.
+Analyzing Verilog file "C:\Users\86139\Desktop\courses\co\P7\mips\Transmit.v" into library work
+Parsing module <Stop_Transmit>.
+Analyzing Verilog file "C:\Users\86139\Desktop\courses\co\P7\mips\Memory.v" into library work
+Parsing verilog file "define.v" included at line 23.
+Parsing module <Memory>.
+Analyzing Verilog file "C:\Users\86139\Desktop\courses\co\P7\mips\MEM-WB.v" into library work
+Parsing verilog file "define.v" included at line 23.
+Parsing module <MEM_WB>.
+Analyzing Verilog file "C:\Users\86139\Desktop\courses\co\P7\mips\IF-ID.v" into library work
+Parsing verilog file "define.v" included at line 23.
+Parsing module <IF_ID>.
+Analyzing Verilog file "C:\Users\86139\Desktop\courses\co\P7\mips\ID-EX.v" into library work
+Parsing verilog file "define.v" included at line 23.
+Parsing module <ID_EX>.
+Analyzing Verilog file "C:\Users\86139\Desktop\courses\co\P7\mips\Fetch.v" into library work
+Parsing verilog file "define.v" included at line 23.
+Parsing module <Fetch>.
+Analyzing Verilog file "C:\Users\86139\Desktop\courses\co\P7\mips\Execute.v" into library work
+Parsing verilog file "define.v" included at line 23.
+Parsing module <Execute>.
+Analyzing Verilog file "C:\Users\86139\Desktop\courses\co\P7\mips\EX-MEM.v" into library work
+Parsing verilog file "define.v" included at line 23.
+Parsing module <EX_MEM>.
+Analyzing Verilog file "C:\Users\86139\Desktop\courses\co\P7\mips\Decode.v" into library work
+Parsing verilog file "define.v" included at line 23.
+Parsing module <Decode>.
+Analyzing Verilog file "C:\Users\86139\Desktop\courses\co\P7\mips\datapath.v" into library work
+Parsing module <Datapath>.
+Analyzing Verilog file "C:\Users\86139\Desktop\courses\co\P7\mips\TC.v" into library work
+Parsing module <TC>.
+Analyzing Verilog file "C:\Users\86139\Desktop\courses\co\P7\mips\CPU.v" into library work
+Parsing module <CPU>.
+Analyzing Verilog file "C:\Users\86139\Desktop\courses\co\P7\mips\Bridge.v" into library work
+Parsing verilog file "define.v" included at line 23.
+Parsing module <Bridge>.
+Analyzing Verilog file "C:\Users\86139\Desktop\courses\co\P7\mips\mips.v" into library work
+Parsing module <mips>.
+
+
+Total REAL time to Xst completion: 3.00 secs
+Total CPU time to Xst completion: 3.18 secs
+ 
+--> 
+
+Total memory usage is 4464540 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

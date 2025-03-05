@@ -1,0 +1,77 @@
+Running: D:\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o C:/Users/86139/Desktop/courses/co/P7/mips/mips_txt_isim_beh.exe -prj C:/Users/86139/Desktop/courses/co/P7/mips/mips_txt_beh.prj work.mips_txt work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 20
+Turning on mult-threading, number of parallel sub-compilation jobs: 40 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Users/86139/Desktop/courses/co/P7/mips/W_AT.v" into library work
+Analyzing Verilog file "C:/Users/86139/Desktop/courses/co/P7/mips/Shift.v" into library work
+Analyzing Verilog file "C:/Users/86139/Desktop/courses/co/P7/mips/PC.v" into library work
+Analyzing Verilog file "C:/Users/86139/Desktop/courses/co/P7/mips/M_EXC.v" into library work
+Analyzing Verilog file "C:/Users/86139/Desktop/courses/co/P7/mips/M_AT.v" into library work
+Analyzing Verilog file "C:/Users/86139/Desktop/courses/co/P7/mips/mult_div.v" into library work
+Analyzing Verilog file "C:/Users/86139/Desktop/courses/co/P7/mips/GRF.v" into library work
+Analyzing Verilog file "C:/Users/86139/Desktop/courses/co/P7/mips/E_AT.v" into library work
+Analyzing Verilog file "C:/Users/86139/Desktop/courses/co/P7/mips/EXT.v" into library work
+Analyzing Verilog file "C:/Users/86139/Desktop/courses/co/P7/mips/D_AT.v" into library work
+Analyzing Verilog file "C:/Users/86139/Desktop/courses/co/P7/mips/DM_EXT.v" into library work
+Analyzing Verilog file "C:/Users/86139/Desktop/courses/co/P7/mips/CP0.v" into library work
+Analyzing Verilog file "C:/Users/86139/Desktop/courses/co/P7/mips/Controller.v" into library work
+Analyzing Verilog file "C:/Users/86139/Desktop/courses/co/P7/mips/branch.v" into library work
+Analyzing Verilog file "C:/Users/86139/Desktop/courses/co/P7/mips/ALU.v" into library work
+Analyzing Verilog file "C:/Users/86139/Desktop/courses/co/P7/mips/Writeback.v" into library work
+Analyzing Verilog file "C:/Users/86139/Desktop/courses/co/P7/mips/Transmit.v" into library work
+Analyzing Verilog file "C:/Users/86139/Desktop/courses/co/P7/mips/Memory.v" into library work
+Analyzing Verilog file "C:/Users/86139/Desktop/courses/co/P7/mips/MEM-WB.v" into library work
+Analyzing Verilog file "C:/Users/86139/Desktop/courses/co/P7/mips/IF-ID.v" into library work
+Analyzing Verilog file "C:/Users/86139/Desktop/courses/co/P7/mips/ID-EX.v" into library work
+Analyzing Verilog file "C:/Users/86139/Desktop/courses/co/P7/mips/Fetch.v" into library work
+Analyzing Verilog file "C:/Users/86139/Desktop/courses/co/P7/mips/Execute.v" into library work
+Analyzing Verilog file "C:/Users/86139/Desktop/courses/co/P7/mips/EX-MEM.v" into library work
+Analyzing Verilog file "C:/Users/86139/Desktop/courses/co/P7/mips/Decode.v" into library work
+Analyzing Verilog file "C:/Users/86139/Desktop/courses/co/P7/mips/datapath.v" into library work
+Analyzing Verilog file "C:/Users/86139/Desktop/courses/co/P7/mips/TC.v" into library work
+Analyzing Verilog file "C:/Users/86139/Desktop/courses/co/P7/mips/CPU.v" into library work
+Analyzing Verilog file "C:/Users/86139/Desktop/courses/co/P7/mips/Bridge.v" into library work
+Analyzing Verilog file "C:/Users/86139/Desktop/courses/co/P7/mips/mips.v" into library work
+Analyzing Verilog file "C:/Users/86139/Desktop/courses/co/P7/mips/mips_txt.v" into library work
+Analyzing Verilog file "D:/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module Controller
+Compiling module Stop_Transmit
+Compiling module PC
+Compiling module Fetch
+Compiling module IF_ID
+Compiling module D_AT
+Compiling module GRF
+Compiling module EXT
+Compiling module Shift
+Compiling module Branch
+Compiling module Decode
+Compiling module ID_EX
+Compiling module E_AT
+Compiling module ALU
+Compiling module Mult_Div
+Compiling module Execute
+Compiling module EX_MEM
+Compiling module M_AT
+Compiling module DM_EXT
+Compiling module M_EXC
+Compiling module CP0
+Compiling module Memory
+Compiling module MEM_WB
+Compiling module W_AT
+Compiling module Writeback
+Compiling module Datapath
+Compiling module CPU
+Compiling module Bridge
+Compiling module TC
+Compiling module mips
+Compiling module mips_txt
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 32 Verilog Units
+Built simulation executable C:/Users/86139/Desktop/courses/co/P7/mips/mips_txt_isim_beh.exe
+Fuse Memory Usage: 38124 KB
+Fuse CPU Usage: 937 ms

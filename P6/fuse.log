@@ -1,0 +1,9 @@
+Running: D:\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -nodebug -prj mips.prj -o mips.exe generated_mips_test 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 20
+Turning on mult-threading, number of parallel sub-compilation jobs: 40 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:\Users\86139\Desktop\courses\co\P6/generated_mips_test.v" into library work
+Starting static elaboration
+ERROR:HDLCompiler:1654 - "C:\Users\86139\Desktop\courses\co\P6/generated_mips_test.v" Line 23: Instantiating <uut> from unknown module <mips>
+ERROR:Simulator:778 - Static elaboration of top level Verilog design unit(s) in library work failed

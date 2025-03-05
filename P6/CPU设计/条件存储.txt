@@ -1,0 +1,36 @@
+条件存储，也就是从DM取出值之后，根据这个值是否满足某个condition，再判断要往哪个寄存器写。 和前两种题型相比更复杂，但是总结下来也就只有以下三种类型——
+1. condition成立： 将DM中的值写入A号寄存器
+condition不成立： 写入B号寄存器
+2. condition成立： 将DM中的值写入A号寄存器
+condition不成立： 不写入
+3. 写入目标完全取决于DM的读取值（如将DM读取值的低5位作为写入目标）
+对于第二种不写入的情况，我们可以将写入地址设置为0号寄存器。因此这三种类型本质上是一种。
+
+对于条件存储类指令，我们只有到M级才知道写入目标是什么，这对会我们的转发和暂停造成影响。我们需要对 stall信号的生成逻辑进行修改，引用学长的话说就是——“如果 D 级的指令要读寄存器，而且后面的新指令 可能 要写这个寄存器，那么就 stall”。代码如下——
+复制成功verilog
+//笔者采用的命名方法是——A1和A2表示该流水级指令的GRF读地址,A3表示指令的GRF写地址
+//例如，如果E级指令为addu，则E_A1为rs域数据，E_A2为rt域数据，E_A3为rd域数据
+//RFWrite表示GRF写入使能信号
+//check信号有效则表示该流水级指令为新指令
+////////////////////////////////////////////////////
+//第一种题型(eg：condition满足向rt号写，否则写31号)
+    assign   stall_rs_E = (D_A1 != 5'd0) & (check_E ? (D_A1 == E_A3 | D_A1 == 5'd31) : D_A1 == E_A3) & (RFWrite_E) & (Tuse_rs < Tnew_E);
+    assign   stall_rs_M = (D_A1 != 5'd0) & (check_M ? (D_A1 == M_A3 | D_A1 == 5'd31) : D_A1 == M_A3) & (RFWrite_M) & (Tuse_rs < Tnew_M);
+    assign   stall_rt_E = (D_A2 != 5'd0) & (check_E ? (D_A2 == E_A3 | D_A2 == 5'd31) : D_A2 == E_A3) & (RFWrite_E) & (Tuse_rt < Tnew_E);
+    assign   stall_rt_M = (D_A2 != 5'd0) & (check_M ? (D_A2 == M_A3 | D_A2 == 5'd31) : D_A2 == M_A3) & (RFWrite_M) & (Tuse_rt < Tnew_M);
+//第二种题型 (eg：condition满足向31号写，否则不写) 
+//按照第一种题型以写成  (check_M ? (D_A2 == 5'd31 | D_A2 == 5'd0): D_A2 == M_A3),因为前面有条件 D_A2 != 5'd0，所以可以简化
+    assign   stall_rt_M = (D_A2 != 5'd0) & (check_M ? D_A2 == 5'd31 : D_A2 == M_A3) & (RFWrite_M) & (Tuse_rt < Tnew_M);
+//第三种题型 (eg：condition满足时写入位置为DM的读取值的低五位)   
+    assign   stall_rt_M = (D_A2 != 5'd0) & (check_M ? 1'b1 : D_A2 == M_A3) & (RFWrite_M) & (Tuse_rt < Tnew_M);
+
+此外我们还需要在M级根据DM取出的值修改A3(GRF写入地址),代码如下——
+verilog
+//第一种题型(eg：condition满足向rt号写，否则写31号)
+    wire M_A3_new = check_M ? (condition ? `rt : 5'd31) : M_A3; 
+//第二种题型 (eg：condition满足向31号写，否则不写) 
+    wire M_A3_new = check_M ? (condition ? 5'd31 : 5'd0) : M_A3; 
+//第三种题型 (eg：写入位置为DM的读取值的低五位)  
+    wire M_A3_new = check_M ? DM_out[4:0] : M_A3; 
+
+这样一来，我们在M级就将可以将正确的GRF写入地址修改，然后再传入下一级流水寄存器(W_Reg)和冒险控制器(HCU)即可。
