@@ -1,7 +1,7 @@
 # Co（计组）-    一个简单的CPU的开发过程
 ## 构造
 
-![](E:\学习\大二上\co\代码\picture\image-20231121224524298.png)
+![](https://github.com/yaoyu231957/Co/blob/master/picture/image-20231121224524298.png?raw=true)
 
 ## 结构设计
 
@@ -298,14 +298,14 @@
   >
   >
   >     Tuse的两条性质：
-  >         
+  >             
   >     - Tuse是一个定值，每个指令的Tuse 是一定的；
   >     - 一个指令可以有两个Tuse 值。
-  >         
+  >             
   >     对于某个指令的数据产出，我们定义供给时间Tnew 为：位于某个流水级的某个指令，它经过多少个时钟周期可以算出结果并且存储到流水级寄存器。
-  >         
+  >             
   >     Tnew的两条性质：
-  >         
+  >             
   >     - Tnew 是一个动态值，每个指令处于流水线不同阶段有不同的 Tnew值；
   >     - 一个指令在一个时刻至多有一个 Tnew值（一个指令至多写一个寄存器）
   >
@@ -333,7 +333,7 @@
   >
   >   根据上述的  T*use*和T*new* 的值，我们做出策略矩阵，其中 F 表示转发，S 表示暂停：
   >
-  >   ![image-20231112131426278](E:\学习\大二上\co\代码\picture\image-20231112131426278.png)
+  >   ![image-20231112131426278](https://github.com/yaoyu231957/Co/blob/master/picture/image-20231112131426278.png?raw=true)
   >
   >   根据上表，可以看出只有四种情况需要阻塞：
   >
@@ -506,4 +506,4 @@
 
 ### 结构图
 
-![image-20231121223103227](E:\学习\大二上\co\代码\picture\image-20231121223103227.png)
+![image-20231121223103227](https://github.com/yaoyu231957/Co/blob/master/picture/image-20231121223103227.png?raw=true)
